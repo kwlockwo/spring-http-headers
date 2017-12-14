@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class Controller {
 	
-	@RequestMapping(value = "/fixtures", method = RequestMethod.GET)
 	public Map<String, String> headers(@RequestHeader Map<String, String> headers) {
 		return headers;
 	}
